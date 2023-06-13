@@ -23,10 +23,23 @@
 
     .containerNav a:hover{
         color: aliceblue;
+        
     }
 
-body{ 
-    background-image: url(/imagenes/img_8698.jpeg) /* Imagen de fondo */
+body{
+  
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center; 
+    background-image: url("../imagenes/img_8698.jpeg"); /* Imagen de fondo */
+    
+    
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+    
+    
+
 }
 
 .ff{
@@ -38,10 +51,9 @@ body{
 width: 190px;
 }
 footer{
-    background-color: brown;
-    height: 100px;
+    background-color: blue;
     margin-top: 300px;
-    background-color: rgb(60, 13, 216, .6);
+    background-color: (60, 13, 216, s);
     
 }
 .footer img{
@@ -55,3 +67,177 @@ footer{
     left: 30%;
 
 }
+
+/* Estilos generales */
+
+/* Reiniciar estilos por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos de la navegación */
+.containerNav {
+  background-color: #007bff; /* Color de fondo azul */
+}
+
+.containerNav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.containerNav li {
+  margin: 0 10px;
+}
+
+.containerNav li a {
+  text-decoration: none;
+  color: #fff; /* Color de texto blanco */
+  font-weight: bold;
+  transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.containerNav li a:hover {
+  color: #ffeb3b; /* Color amarillo al hacer hover */
+}
+
+/* Estilos de la sección principal */
+.ff {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 25vh;
+  background-color: blue;
+  text-align: center;
+  padding: 20px;
+}
+
+.ff-inner {
+  max-width: 600px; /* Ancho máximo del recuadro */
+}
+
+.ff p {
+  margin: 0;
+}
+
+.ff h1 {
+  margin: 10px 0;
+}
+
+/* Estilos del pie de página */
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+footer{
+  bottom: 0;
+  left: 0;
+  position: absolute;}
+
+
+.footer img {
+  width: 30px;
+  margin: 0 10px;
+}
+
+.carousel{
+
+  margin-top: 15%;
+
+}
+
+
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+  /* Estilos de la navegación en dispositivos móviles */
+  .containerNav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .containerNav li {
+    margin: 10px 0;
+  }
+
+  /* Estilos de la sección principal en dispositivos móviles */
+  .ff {
+    padding: 10px;
+  }
+
+  .ff-inner {
+    max-width: 100%; /* Ancho máximo del recuadro en dispositivos móviles */
+  }
+}
+
+.footer img {
+  width: 300px;
+  margin: 0 10px;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+  /* Estilos de la navegación en dispositivos móviles */
+  .containerNav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .containerNav li {
+    margin: 10px 0;
+  }
+
+  /* Estilos de la sección principal en dispositivos móviles */
+  .ff {
+    padding: 20px;
+  }
+
+
+  
+}@media (max-width:768px){
+
+ .footer{
+width: 100vh;  
+height: 100px;
+ }
+
+
+ .footer img {
+  
+  margin-left: 20px;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  
+  
+   }
+  .ff{
+    position: absolute; 
+    height: 15rem;
+  margin: 0rem 15rem ;
+  
+  }
+
+ 
+
+  }
+
+
+@media (max-width:480px){
+  background-image: url;
+  .wrap-footer{
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+
+@media (max-width:320px){
+  .footer-creds{
+    flex-flow: column;
+  }
+
